@@ -1,7 +1,32 @@
 @import "materialize";
-
 /* --- NAVBAR STYLING --- */
-.nav {
+a {
+  color: #ffffff;
+}
+.nav-wrapper {
+  display: inline;
+}
+
+#signup {
+    margin-left: 7rem;
+    width: 25%;
+    position: relative;
+    display: inline;
+}
+
+nav {
+  background-color: #fff;
+  height: 100px;
+  padding-top: 1rem;
+}
+
+nav a {
+  color: #222;
+}
+
+nav ul a:hover, nav ul a:active {
+    color: #00AA9C!important;
+    background-color: #fff;
 }
 
 .left {
@@ -13,9 +38,63 @@ nav .brand-logo.center {
   left: 3%;
   transform: none;
   float: left!important;
+  position: relative;
+  color: #222;
+  font-family: 'Orbitron', sans-serif;
+
 }
 
 #nav-mobile > li > a {
   font-size: 18px;
+  color: #222;
 }
 /* --- END OF NAVBAR STYLING --- */
+
+/* --- HOME PAGE STYLING --- */
+#hero {
+  height: 550px;
+  width: 100%;
+  padding-top: 1px;
+  background-image: url('watch7.png');
+}
+#cta {
+  width: 40%;
+  padding: 5rem 6rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#headline, #subheadline {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#subheadline {
+  color: #787878;
+  font-size: 22px;
+}
+/* --- END HOME PAGE STYLING --- */
+
+.row .col {
+  float: none;
+}
+
+.row .col.s6 {
+  height: 500px;
+  padding-top: 4rem;
+}
+
+.row .col.s12 {
+  padding-top: 4rem;
+}
+
+#homesection2 {
+  margin: 0 auto;
+  width: 952px;
+  text-align: center;
+}
