@@ -1,0 +1,21 @@
+@import "materialize";
+
+/* --- NAVBAR STYLING --- */
+.nav {
+}
+
+.left {
+  float: right!important;
+  margin-right: 5rem;
+}
+
+nav .brand-logo.center {
+  left: 3%;
+  transform: none;
+  float: left!important;
+}
+
+#nav-mobile > li > a {
+  font-size: 18px;
+}
+/* --- END OF NAVBAR STYLING --- */
