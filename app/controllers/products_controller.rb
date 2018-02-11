@@ -17,6 +17,12 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  #add to cart
+  #check if user has a cart
+  #if not, build cart
+
+
+
   # GET /products/1/edit
   def edit
   end
