@@ -50,7 +50,7 @@ nav .brand-logo.center {
 }
 /* --- END OF NAVBAR STYLING --- */
 
-/* --- HOME PAGE STYLING --- */
+/* --- HOME PAGE TOP SECTION STYLING --- */
 #hero {
   height: 550px;
   width: 100%;
@@ -78,7 +78,10 @@ nav .brand-logo.center {
   color: #787878;
   font-size: 22px;
 }
-/* --- END HOME PAGE STYLING --- */
+/* --- END HOME PAGE TOP SECTION STYLING --- */
+
+
+/* --- HOME PAGE SECTION 2 STYLING --- */
 
 .row .col {
   float: none;
@@ -87,14 +90,76 @@ nav .brand-logo.center {
 .row .col.s6 {
   height: 500px;
   padding-top: 4rem;
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  margin-top: 5rem;
 }
 
 .row .col.s12 {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 #homesection2 {
   margin: 0 auto;
   width: 952px;
   text-align: center;
+  line-height: 0;
+}
+#homesection2 img {
+  padding-top: 3rem;
+}
+#homesection2 p {
+  color: #787878;
+  font-size: 18px;
+}
+
+#homesection3 {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+#left {
+  width: 45%;
+  float: left;
+  padding: 3rem;
+  margin-top: 7rem;
+}
+#left p {
+  color: #787878;
+  font-size: 18px;
+}
+#right {
+  padding: 0;
+  float: right;
+}
+
+
+.parallax-container {
+  height: 480px;
+  background-image: url('https://ak0.picdn.net/shutterstock/videos/30449650/thumb/5.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #000;
+  padding: 0;
+  color: #fff;
+  // background-position: fixed;
+}
+
+#subscribe {
+  width: 70%;
+  float: left;
+  padding: 0 0 0 5rem;
+  font-weight: 700;
+  font-size: 22px;
+}
+#sub {
+  font-weight: 300;
+}
+#submit {
+  float: right;
+}
+#icon_telephone, #icon_prefix {
+  color: #fff;
 }

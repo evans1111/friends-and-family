@@ -250,7 +250,7 @@ Completed 200 OK in 118ms (Views: 104.8ms | ActiveRecord: 0.5ms)
 
 Started GET "/products/1" for 127.0.0.1 at 2018-02-09 20:15:14 -0500
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -258,7 +258,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -294,7 +294,7 @@ puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/products" for 127.0.0.1 at 2018-02-09 20:15:16 -0500
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -302,7 +302,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -395,9 +395,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 225ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -407,13 +407,13 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/turbolinks-source-5.1.0/lib/assets/javascripts
   /Users/alex/Desktop/wyncode/ffproject/difficult/node_modules):
      5:     <%= csrf_meta_tags %>
-     6: 
+     6:
      7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
      9:   </head>
-    10: 
+    10:
     11:   <body>
-  
+
 app/assets/javascripts/application.js:16
 app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1908946458123104918_70304127191680'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:32:20 -0500
@@ -423,9 +423,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'materialize-sprockets' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -435,13 +435,13 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/turbolinks-source-5.1.0/lib/assets/javascripts
   /Users/alex/Desktop/wyncode/ffproject/difficult/node_modules):
      5:     <%= csrf_meta_tags %>
-     6: 
+     6:
      7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
      9:   </head>
-    10: 
+    10:
     11:   <body>
-  
+
 app/assets/javascripts/application.js:16
 app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1908946458123104918_70304095871560'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:40:32 -0500
@@ -451,7 +451,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (File to import not found or unreadable: materialize.
 Load paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
@@ -464,12 +464,12 @@ Load paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/node_modules):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     9:   </head>
-   10: 
-  
+   10:
+
 app/assets/stylesheets/application.scss:17
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1908946458123104918_70304117719720'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:41:20 -0500
@@ -479,7 +479,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 120ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (File to import not found or unreadable: materialize.
 Load paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
@@ -492,12 +492,12 @@ Load paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/node_modules):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     9:   </head>
-   10: 
-  
+   10:
+
 app/assets/stylesheets/application.scss:17
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1908946458123104918_70304135283160'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:43:46 -0500
@@ -507,7 +507,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (File to import not found or unreadable: materialize.
 Load paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
@@ -520,12 +520,12 @@ Load paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/node_modules):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     9:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
    10:     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  
+
 app/assets/stylesheets/application.scss:17
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1908946458123104918_70304127240820'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:47:49 -0500
@@ -536,9 +536,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 8735ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -556,12 +556,12 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/materialize-sass-0.100.2/app/assets/images):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    9: 
+    9:
    10:   </head>
-  
+
 app/assets/javascripts/application.js:13
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339897380640'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:52:22 -0500
@@ -571,9 +571,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -591,12 +591,12 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/materialize-sass-0.100.2/app/assets/images):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    9: 
+    9:
    10:   </head>
-  
+
 app/assets/javascripts/application.js:13
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339915261920'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:54:41 -0500
@@ -606,9 +606,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -626,12 +626,12 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/materialize-sass-0.100.2/app/assets/images):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    9: 
+    9:
    10:   </head>
-  
+
 app/assets/javascripts/application.js:13
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339935218460'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:55:02 -0500
@@ -641,9 +641,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -661,12 +661,12 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/materialize-sass-0.100.2/app/assets/images):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    9: 
+    9:
    10:   </head>
-  
+
 app/assets/javascripts/application.js:13
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339898162300'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:56:57 -0500
@@ -676,9 +676,9 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (couldn't find file 'jquery-ui' with type 'application/javascript'
-Checked in these paths: 
+Checked in these paths:
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/config
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/images
   /Users/alex/Desktop/wyncode/ffproject/difficult/app/assets/javascripts
@@ -696,12 +696,12 @@ Checked in these paths:
   /Users/alex/.rvm/gems/ruby-2.4.2/gems/materialize-sass-0.100.2/app/assets/images):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    9: 
+    9:
    10:   </head>
-  
+
 app/assets/javascripts/application.js:13
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339899092720'
 Started GET "/" for 127.0.0.1 at 2018-02-09 20:57:05 -0500
@@ -765,7 +765,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 1335ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x00007ff2907ba478>:0x00007ff28ff09d88>
 Did you mean?  products_url):
     15:         <div class="nav-wrapper blue-grey darken-1">
@@ -775,7 +775,7 @@ Did you mean?  products_url):
     19:             <li><a href="sass.html">HOME</a></li>
     20:             <li><a href="badges.html">SHOP</a></li>
     21:           </ul>
-  
+
 app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___1429810218805573952_70339930394120'
 Started GET "/" for 127.0.0.1 at 2018-02-09 21:05:40 -0500
 Processing by WelcomesController#home as HTML
@@ -791,7 +791,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 605ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x00007ff2907ba478>:0x00007ff2936c9a20>
 Did you mean?  products_url):
     15:         <div class="nav-wrapper blue-grey darken-1">
@@ -801,7 +801,7 @@ Did you mean?  products_url):
     19:             <li><a href="sass.html">HOME</a></li>
     20:             <li><a href="badges.html">SHOP</a></li>
     21:           </ul>
-  
+
 app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___1429810218805573952_70339916182260'
 Started GET "/" for 127.0.0.1 at 2018-02-09 21:08:33 -0500
 Processing by WelcomesController#home as HTML
@@ -834,9 +834,9 @@ Completed 200 OK in 180ms (Views: 175.8ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/sass.html" for 127.0.0.1 at 2018-02-09 21:09:04 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/sass.html"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -865,9 +865,9 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/sass.html" for 127.0.0.1 at 2018-02-09 21:09:38 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/sass.html"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -896,9 +896,9 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/sass.html" for 127.0.0.1 at 2018-02-09 21:09:41 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/sass.html"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -1010,16 +1010,16 @@ Processing by ProductsController#index as HTML
 Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.9ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "...t "materialize"": expected selector or at-rule, was ".left {"):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    9: 
+    9:
    10:   </head>
-  
+
 app/assets/stylesheets/application.scss:3
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339884389460'
 Started GET "/products" for 127.0.0.1 at 2018-02-09 21:15:51 -0500
@@ -1821,16 +1821,16 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (The asset "home.css" is not present in the asset pipeline.):
      5:     <%= csrf_meta_tags %>
-     6: 
+     6:
      7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      8:     <%= stylesheet_link_tag    'home', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9: 
+     9:
     10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     11:     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  
+
 app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1429810218805573952_70339934153300'
 Started GET "/" for 127.0.0.1 at 2018-02-09 22:52:31 -0500
 Processing by WelcomesController#home as HTML
@@ -1839,16 +1839,16 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (The asset "index.css" is not present in the asset pipeline.):
      5:     <%= csrf_meta_tags %>
-     6: 
+     6:
      7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      8:     <%= stylesheet_link_tag    'index', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9: 
+     9:
     10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     11:     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  
+
 app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1429810218805573952_70339930720900'
 Started GET "/" for 127.0.0.1 at 2018-02-09 22:52:57 -0500
 Processing by WelcomesController#home as HTML
@@ -1857,16 +1857,16 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (The asset "welcome.css" is not present in the asset pipeline.):
      5:     <%= csrf_meta_tags %>
-     6: 
+     6:
      7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      8:     <%= stylesheet_link_tag    'welcome', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9: 
+     9:
     10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     11:     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  
+
 app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1429810218805573952_70339945995120'
 Started GET "/" for 127.0.0.1 at 2018-02-09 22:53:57 -0500
 Processing by WelcomesController#home as HTML
@@ -1910,16 +1910,16 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 2058ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "*": expected selector, was "= require_self"):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    8: 
+    8:
     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
    10:     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  
+
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339932761400'
 Started GET "/" for 127.0.0.1 at 2018-02-09 22:59:57 -0500
@@ -1929,16 +1929,16 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 2195ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Invalid CSS after "*": expected selector, was "= require_self"):
     4:     <title>Hard</title>
     5:     <%= csrf_meta_tags %>
-    6: 
+    6:
     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    8: 
+    8:
     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
    10:     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  
+
 app/assets/stylesheets/application.scss:2
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1429810218805573952_70339943695400'
 Started GET "/" for 127.0.0.1 at 2018-02-09 23:00:36 -0500
@@ -1953,14 +1953,14 @@ Processing by WelcomesController#home as HTML
 Completed 406 Not Acceptable in 110ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::UnknownFormat (WelcomesController#home is missing a template for this request format and variant.
 
 request.formats: ["text/html"]
 request.variant: []
 
 NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
-  
+
 actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
 actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
 actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
@@ -2061,7 +2061,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (The asset "welcome.css" is not present in the asset pipeline.):
     4:   <meta charset="UTF-8">
     5:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2069,8 +2069,8 @@ ActionView::Template::Error (The asset "welcome.css" is not present in the asset
     7:   <%= stylesheet_link_tag :welcome %>
     8: </head>
     9: <body>
-   10: 
-  
+   10:
+
 app/views/welcomes/home.html.erb:7:in `_app_views_welcomes_home_html_erb__1288963355380732776_70339944363120'
 Started GET "/" for 127.0.0.1 at 2018-02-09 23:06:31 -0500
 Processing by WelcomesController#home as HTML
@@ -2079,7 +2079,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 641ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (undefined local variable or method `welcome' for #<#<Class:0x00007ff2907ba478>:0x00007ff296a2c5c0>):
     4:   <meta charset="UTF-8">
     5:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -2087,8 +2087,8 @@ ActionView::Template::Error (undefined local variable or method `welcome' for #<
     7:   <%= stylesheet_link_tag welcome %>
     8: </head>
     9: <body>
-   10: 
-  
+   10:
+
 app/views/welcomes/home.html.erb:7:in `_app_views_welcomes_home_html_erb__1288963355380732776_70339943033180'
 Started GET "/" for 127.0.0.1 at 2018-02-09 23:07:16 -0500
 Processing by WelcomesController#home as HTML
@@ -2098,9 +2098,9 @@ Completed 200 OK in 148ms (Views: 144.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcome.scss" for 127.0.0.1 at 2018-02-09 23:07:17 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcome.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2136,9 +2136,9 @@ Completed 200 OK in 188ms (Views: 182.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcome.scss" for 127.0.0.1 at 2018-02-09 23:07:26 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcome.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2174,9 +2174,9 @@ Completed 200 OK in 132ms (Views: 128.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcome.scss" for 127.0.0.1 at 2018-02-09 23:07:40 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcome.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2212,9 +2212,9 @@ Completed 200 OK in 99ms (Views: 95.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcome.scss" for 127.0.0.1 at 2018-02-09 23:07:54 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcome.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2249,7 +2249,7 @@ Processing by WelcomesController#home as HTML
 Completed 500 Internal Server Error in 365ms (ActiveRecord: 0.0ms)
 
 
-  
+
 ActionView::Template::Error (Asset was not declared to be precompiled in production.
 Add `Rails.application.config.assets.precompile += %w( welcomes.css )` to `config/initializers/assets.rb` and restart your server):
     4:   <meta charset="UTF-8">
@@ -2258,8 +2258,8 @@ Add `Rails.application.config.assets.precompile += %w( welcomes.css )` to `confi
     7:   <%= stylesheet_link_tag  "welcomes" %>
     8: </head>
     9: <body>
-   10: 
-  
+   10:
+
 app/views/welcomes/home.html.erb:7:in `_app_views_welcomes_home_html_erb__1288963355380732776_70339952628200'
 Started GET "/" for 127.0.0.1 at 2018-02-09 23:09:03 -0500
 Processing by WelcomesController#home as HTML
@@ -2269,9 +2269,9 @@ Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcomes.scss" for 127.0.0.1 at 2018-02-09 23:09:03 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcomes.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2307,9 +2307,9 @@ Completed 200 OK in 168ms (Views: 165.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcomes.scss" for 127.0.0.1 at 2018-02-09 23:09:10 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcomes.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2345,9 +2345,9 @@ Completed 200 OK in 187ms (Views: 182.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcomes.scss" for 127.0.0.1 at 2018-02-09 23:09:16 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcomes.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2383,9 +2383,9 @@ Completed 200 OK in 95ms (Views: 91.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/stylesheets/welcomes.scss" for 127.0.0.1 at 2018-02-09 23:09:22 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/welcomes.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2420,9 +2420,9 @@ Processing by WelcomesController#home as HTML
 Completed 200 OK in 244ms (Views: 240.2ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/stylesheets/welcomes.scss"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2484,9 +2484,9 @@ Completed 200 OK in 426ms (Views: 411.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/images/parallax1.jpg" for 127.0.0.1 at 2018-02-09 23:16:29 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/images/parallax1.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2612,9 +2612,9 @@ Processing by WelcomesController#home as HTML
 Completed 200 OK in 3833ms (Views: 3817.9ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2654,9 +2654,9 @@ Processing by WelcomesController#home as HTML
 Completed 200 OK in 179ms (Views: 173.1ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2697,9 +2697,9 @@ Completed 200 OK in 3117ms (Views: 3114.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/images/watch2.jpg" for 127.0.0.1 at 2018-02-09 23:27:56 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2739,9 +2739,9 @@ Processing by WelcomesController#home as HTML
   Rendering welcomes/home.html.erb within layouts/application
   Rendered welcomes/home.html.erb within layouts/application (1.1ms)
 Started GET "/app/assets/images/watch2.jpg" for 127.0.0.1 at 2018-02-09 23:28:17 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2773,9 +2773,9 @@ Completed 200 OK in 264ms (Views: 255.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/app/assets/images/watch2.jpg" for 127.0.0.1 at 2018-02-09 23:28:19 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2810,9 +2810,9 @@ Processing by WelcomesController#home as HTML
 Completed 200 OK in 3005ms (Views: 3000.2ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2845,9 +2845,9 @@ puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2880,9 +2880,9 @@ puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/watch2.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2943,9 +2943,9 @@ Processing by WelcomesController#home as HTML
 Completed 200 OK in 4540ms (Views: 4522.9ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/watch4.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -2985,9 +2985,9 @@ Processing by WelcomesController#home as HTML
 Completed 200 OK in 81ms (Views: 78.6ms | ActiveRecord: 0.0ms)
 
 
-  
+
 ActionController::RoutingError (No route matches [GET] "/assets/watch4.jpg"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -3423,9 +3423,9 @@ Completed 200 OK in 201ms (Views: 196.9ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/watches8.png" for 127.0.0.1 at 2018-02-10 00:16:24 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/watches8.png"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -3461,9 +3461,9 @@ Completed 200 OK in 103ms (Views: 100.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/watches8.png" for 127.0.0.1 at 2018-02-10 00:16:30 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/watches8.png"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -3499,9 +3499,9 @@ Completed 200 OK in 126ms (Views: 120.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/watches8.png" for 127.0.0.1 at 2018-02-10 00:16:46 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/watches8.png"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -3537,9 +3537,9 @@ Completed 200 OK in 247ms (Views: 241.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/watches8.png" for 127.0.0.1 at 2018-02-10 00:17:26 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/watches8.png"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -3568,9 +3568,9 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/watches8.png" for 127.0.0.1 at 2018-02-10 00:17:42 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/watches8.png"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4507,9 +4507,9 @@ Completed 200 OK in 793ms (Views: 778.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/users/signup" for 127.0.0.1 at 2018-02-10 14:23:06 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/signup"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4538,9 +4538,9 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/user/signup" for 127.0.0.1 at 2018-02-10 14:23:12 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/user/signup"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4569,9 +4569,9 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/users/sign-up" for 127.0.0.1 at 2018-02-10 14:23:18 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign-up"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4674,9 +4674,9 @@ Completed 200 OK in 116ms (Views: 111.8ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/users/log_out" for 127.0.0.1 at 2018-02-10 14:27:20 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/log_out"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -4705,9 +4705,9 @@ puma (3.11.2) lib/puma/server.rb:438:in `process_client'
 puma (3.11.2) lib/puma/server.rb:302:in `block in run'
 puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/users/sign_out" for 127.0.0.1 at 2018-02-10 14:28:08 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -5133,7 +5133,7 @@ Processing by ProductsController#index as HTML
 Completed 401 Unauthorized in 9ms (ActiveRecord: 0.2ms)
 
 
-  
+
 ActionView::Template::Error (no implicit conversion of nil into String):
     16:     <tbody>
     17:       <% @products.each do |product| %>
@@ -5142,7 +5142,7 @@ ActionView::Template::Error (no implicit conversion of nil into String):
     20:           <td><%= product.name %></td>
     21:           <td><%= product.description %></td>
     22:           <td><%= product.price_in_cents %></td>
-  
+
 app/views/products/index.html.erb:19:in `+'
 app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb___4131308096260164821_70014896673940'
 app/views/products/index.html.erb:17:in `_app_views_products_index_html_erb___4131308096260164821_70014896673940'
@@ -5153,7 +5153,7 @@ Processing by ProductsController#index as HTML
 Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
 
 
-  
+
 SyntaxError (/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/index.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
 =( image_tag("gallery/"product.picture) );@output_buffer.saf
                               ^
@@ -5163,7 +5163,7 @@ g("gallery/"product.picture) );@output_buffer.safe_append='<
 /home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
           ensure
                 ^):
-  
+
 app/views/products/index.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
 app/views/products/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
 app/views/products/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
@@ -5175,7 +5175,7 @@ Processing by ProductsController#index as HTML
 Completed 401 Unauthorized in 8ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActionView::Template::Error (The asset "watch1.jpg" is not present in the asset pipeline.):
     16:     <tbody>
     17:       <% @products.each do |product| %>
@@ -5184,7 +5184,7 @@ ActionView::Template::Error (The asset "watch1.jpg" is not present in the asset 
     20:           <td><%= product.name %></td>
     21:           <td><%= product.description %></td>
     22:           <td><%= product.price_in_cents %></td>
-  
+
 app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb___4131308096260164821_70014897268300'
 app/views/products/index.html.erb:17:in `_app_views_products_index_html_erb___4131308096260164821_70014897268300'
 Started GET "/products" for 127.0.0.1 at 2018-02-10 17:32:25 -0500
@@ -5195,7 +5195,7 @@ Processing by ProductsController#index as HTML
 Completed 401 Unauthorized in 116ms (ActiveRecord: 0.3ms)
 
 
-  
+
 ActionView::Template::Error (nil is not a valid asset source):
     16:     <tbody>
     17:       <% @products.each do |product| %>
@@ -5204,7 +5204,7 @@ ActionView::Template::Error (nil is not a valid asset source):
     20:           <td><%= product.name %></td>
     21:           <td><%= product.description %></td>
     22:           <td><%= product.price_in_cents %></td>
-  
+
 app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb___4131308096260164821_70014897374980'
 app/views/products/index.html.erb:17:in `_app_views_products_index_html_erb___4131308096260164821_70014897374980'
 Started GET "/products" for 127.0.0.1 at 2018-02-10 17:34:01 -0500
@@ -5224,9 +5224,9 @@ Completed 200 OK in 87ms (Views: 81.0ms | ActiveRecord: 0.8ms)
 
 
 Started GET "/product" for 127.0.0.1 at 2018-02-10 17:37:35 -0500
-  
+
 ActionController::RoutingError (No route matches [GET] "/product"):
-  
+
 actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
@@ -5915,7 +5915,7 @@ Processing by ProductsController#show as HTML
 Completed 401 Unauthorized in 52ms (ActiveRecord: 1.1ms)
 
 
-  
+
 SyntaxError (/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
 e_tag("gallery/watch1.jpg") %=> -->
                               ^
@@ -5928,7 +5928,7 @@ e_tag("gallery/watch1.jpg") %=> -->
 /home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
           end
              ^):
-  
+
 app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
 app/views/products/show.html.erb:26: syntax error, unexpected '<'
 app/views/products/show.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
@@ -5950,7 +5950,7 @@ Processing by ProductsController#show as HTML
 Completed 401 Unauthorized in 12ms (ActiveRecord: 0.3ms)
 
 
-  
+
 SyntaxError (/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
 e_tag("gallery/watch1.jpg") %=> -->
                               ^
@@ -5963,7 +5963,7 @@ e_tag("gallery/watch1.jpg") %=> -->
 /home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
           end
              ^):
-  
+
 app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
 app/views/products/show.html.erb:26: syntax error, unexpected '<'
 app/views/products/show.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
@@ -6010,5 +6010,3 @@ Processing by ProductsController#show as HTML
   Rendering products/show.html.erb within layouts/application
   Rendered products/show.html.erb within layouts/application (4.5ms)
 Completed 200 OK in 135ms (Views: 127.3ms | ActiveRecord: 0.7ms)
-
-
