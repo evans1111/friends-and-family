@@ -1,8 +1,4 @@
 class Order < ApplicationRecord
-  has_many :products
-  belongs_to :cart
+  has_many :items, class_name: 'OrderItem'
 
-  def subtotal
-    #products
-  end
 end
