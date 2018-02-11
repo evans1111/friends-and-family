@@ -6010,3 +6010,1042 @@ Processing by ProductsController#show as HTML
   Rendering products/show.html.erb within layouts/application
   Rendered products/show.html.erb within layouts/application (4.5ms)
 Completed 200 OK in 135ms (Views: 127.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddTokenToOrders (20180210214231)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "orders" ADD "token" varchar[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180210214231"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOrderItems (20180210222714)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "order_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180210222714"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddColumnToCartTable (20180210231807)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "carts" ADD "product_id" integer[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180210231807"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started POST "/carts?product_id=61" for 127.0.0.1 at 2018-02-11 13:07:29 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Djpn+iJ9xqZUHy7RxUmcXCN9zNS9M9mO1JdBJQoYrN1kvNNUWPZ1xK6vwRm7XWdLWxowKG7l06MuWEo+kwGf/g==", "commit"=>"Add to Cart", "product_id"=>"61"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 93ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `porduct_id=' for #<Cart:0x00007fb3fedba088>
+Did you mean?  product_id=
+               product_id
+               product_id?):
+  
+app/controllers/carts_controller.rb:9:in `create'
+Started POST "/carts?product_id=61" for 127.0.0.1 at 2018-02-11 13:07:54 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Djpn+iJ9xqZUHy7RxUmcXCN9zNS9M9mO1JdBJQoYrN1kvNNUWPZ1xK6vwRm7XWdLWxowKG7l06MuWEo+kwGf/g==", "commit"=>"Add to Cart", "product_id"=>"61"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:07:54.170632"], ["updated_at", "2018-02-11 18:07:54.170632"], ["product_id", 61]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+No template found for CartsController#create, rendering head :no_content
+Completed 204 No Content in 324ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:08:02 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  Rendered carts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1206ms (Views: 1200.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:08:19 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  Rendered carts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 295ms (Views: 211.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:08:58 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  Rendered carts/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 132ms (Views: 124.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:12:05 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered carts/index.html.erb within layouts/application (15.3ms)
+Completed 401 Unauthorized in 30ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `product' for #<Cart:0x00007fb40351f248>
+Did you mean?  product_id):
+    1: <% @carts.each do |cart| %>
+    2: <% product = cart.product %>
+    3: <tr>
+    4:    <td><%if product.picture.present? %>
+    5:     <%= image_tag(product.picture, :style => "height: 50px ;width: 50px") %>
+  
+app/views/carts/index.html.erb:2:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205538794800'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205538794800'
+Started PUT "/__web_console/repl_sessions/8aa7818bfd2bf4fbd427ed27164be58c" for 127.0.0.1 at 2018-02-11 13:12:14 -0500
+Started PUT "/__web_console/repl_sessions/8aa7818bfd2bf4fbd427ed27164be58c" for 127.0.0.1 at 2018-02-11 13:12:15 -0500
+Started PUT "/__web_console/repl_sessions/8aa7818bfd2bf4fbd427ed27164be58c" for 127.0.0.1 at 2018-02-11 13:12:16 -0500
+Started PUT "/__web_console/repl_sessions/8aa7818bfd2bf4fbd427ed27164be58c" for 127.0.0.1 at 2018-02-11 13:12:23 -0500
+Started PUT "/__web_console/repl_sessions/8aa7818bfd2bf4fbd427ed27164be58c" for 127.0.0.1 at 2018-02-11 13:12:27 -0500
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:13:00 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 290ms (Views: 250.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:14:22 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."cart_id" = ?[0m  [["cart_id", 1]]
+  Rendered carts/index.html.erb within layouts/application (16.9ms)
+Completed 401 Unauthorized in 58ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: products.cart_id: SELECT "products".* FROM "products" WHERE "products"."cart_id" = ?):
+    1: <% @carts.each do |cart| %>
+    2:   <% cart.products.each do |product| %>
+    3:     <tr>
+    4:        <td><%if product.picture.present? %>
+    5:         <%= image_tag(product.picture, :style => "height: 50px ;width: 50px") %>
+  
+app/views/carts/index.html.erb:2:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205564506900'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205564506900'
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:14:54 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 307ms (Views: 257.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:15:22 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (65.7ms)
+Completed 200 OK in 252ms (Views: 240.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/carts?product_id=62" for 127.0.0.1 at 2018-02-11 13:15:24 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OsKaJsd9qtImS2gDfw0xzElHAZZ2nTtZrF5qkTASnP6G9b/OcQMB+EkKnWEM0N+ueJyqZwlUxMwAjNOEtDu1mw==", "commit"=>"Add to Cart", "product_id"=>"62"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:15:24.251390"], ["updated_at", "2018-02-11 18:15:24.251390"], ["product_id", 62]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+No template found for CartsController#create, rendering head :no_content
+Completed 204 No Content in 251ms (ActiveRecord: 9.2ms)
+
+
+Started POST "/carts?product_id=63" for 127.0.0.1 at 2018-02-11 13:15:43 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fZxgbKfsKpvN6CMEPwgJuqZathilgopKZ4ExEYyGmC/Bq0WEEZKBsaKp1mZM1efYl4Ed6dpLdd/LU4gECK+xSg==", "commit"=>"Add to Cart", "product_id"=>"63"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:15:43.278498"], ["updated_at", "2018-02-11 18:15:43.278498"], ["product_id", 63]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 83ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:15:43 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 208ms (Views: 196.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:15:45 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 216ms (Views: 208.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:18:52 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 180ms (Views: 169.3ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/products/61" for 127.0.0.1 at 2018-02-11 13:19:05 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Hn8xPLlCPJpBM+kr2/vjpJ5YOsrVyqhI8V5H9Lvrch10+YWSw8mP+LuDBuOl7xiz5j/GNgYcomULkUzvIvJBPg==", "id"=>"61"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (12.8ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 61]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 42ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:19:05 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 200ms (Views: 195.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:23:02 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 240ms (Views: 209.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2018-02-11 13:23:12 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cart"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:23:15 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (19.5ms)
+Completed 401 Unauthorized in 42ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `picture' for nil:NilClass):
+    1: <% @carts.each do |cart| %>
+    2: <% product = cart.product %>
+    3: <tr>
+    4:    <td><%if product.picture.present? %>
+    5:     <%= image_tag(product.picture, :style => "height: 50px ;width: 50px") %>
+    6:     <% end %>
+    7:   </td>
+  
+app/views/carts/index.html.erb:4:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205534121720'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205534121720'
+Started PUT "/__web_console/repl_sessions/f8c0745cadbb90c2ceacf16d2e3efd59" for 127.0.0.1 at 2018-02-11 13:23:24 -0500
+Started PUT "/__web_console/repl_sessions/f8c0745cadbb90c2ceacf16d2e3efd59" for 127.0.0.1 at 2018-02-11 13:23:26 -0500
+Started PUT "/__web_console/repl_sessions/f8c0745cadbb90c2ceacf16d2e3efd59" for 127.0.0.1 at 2018-02-11 13:23:31 -0500
+Started PUT "/__web_console/repl_sessions/f8c0745cadbb90c2ceacf16d2e3efd59" for 127.0.0.1 at 2018-02-11 13:23:36 -0500
+Started PUT "/__web_console/repl_sessions/f8c0745cadbb90c2ceacf16d2e3efd59" for 127.0.0.1 at 2018-02-11 13:23:41 -0500
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:23:41 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered carts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 259ms (Views: 249.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:23:45 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 246ms (Views: 238.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/carts?product_id=62" for 127.0.0.1 at 2018-02-11 13:23:47 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3DYwUnLQwKh1YD6vGIRc8QrcRvphq5nmKr2DW6ZBTMZgARW6xK5rghohy81rWbKTOwftCx5iZnOGbzpOImhlow==", "commit"=>"Add to Cart", "product_id"=>"62"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:23:47.076900"], ["updated_at", "2018-02-11 18:23:47.076900"], ["product_id", 62]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 11ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:23:47 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (444.2ms)
+Completed 401 Unauthorized in 471ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cart_product_delete' for #<#<Class:0x00007fb3ffd854b8>:0x00007fb4007ca810>):
+     9:   <td><%= product.description %></td>
+    10:   <td><%= product.price_in_cents %></td>
+    11:   <td class="waves-effect waves-light btn"><%= link_to 'Product Description', product %></td>
+    12:   <td><%= link_to 'Delete', cart_product_delete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    13: 
+    14: </tr>
+    15: <% end %>
+  
+app/views/carts/index.html.erb:12:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205539506480'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205539506480'
+Started POST "/carts?product_id=63" for 127.0.0.1 at 2018-02-11 13:23:51 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AKy/4rIWwtvDjwZJl847ZvjlHIenuCZ3hK+SiJbvndJqKgtMyJ1xuTk/6YHp2sBxgILge3RuLFp+YJmTD/au8Q==", "commit"=>"Add to Cart", "product_id"=>"63"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:23:51.426053"], ["updated_at", "2018-02-11 18:23:51.426053"], ["product_id", 63]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 19ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:23:51 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (399.6ms)
+Completed 401 Unauthorized in 422ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cart_product_delete' for #<#<Class:0x00007fb3ffd854b8>:0x00007fb4007c3088>):
+     9:   <td><%= product.description %></td>
+    10:   <td><%= product.price_in_cents %></td>
+    11:   <td class="waves-effect waves-light btn"><%= link_to 'Product Description', product %></td>
+    12:   <td><%= link_to 'Delete', cart_product_delete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    13: 
+    14: </tr>
+    15: <% end %>
+  
+app/views/carts/index.html.erb:12:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205539491260'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205539491260'
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:23:53 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (305.8ms)
+Completed 401 Unauthorized in 319ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `cart_product_delete' for #<#<Class:0x00007fb3ffd854b8>:0x00007fb40337af28>):
+     9:   <td><%= product.description %></td>
+    10:   <td><%= product.price_in_cents %></td>
+    11:   <td class="waves-effect waves-light btn"><%= link_to 'Product Description', product %></td>
+    12:   <td><%= link_to 'Delete', cart_product_delete, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    13: 
+    14: </tr>
+    15: <% end %>
+  
+app/views/carts/index.html.erb:12:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205562412280'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205562412280'
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:26:09 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 310ms (Views: 250.0ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/carts/4/product_delete?product_id=62" for 127.0.0.1 at 2018-02-11 13:26:17 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"6OK5ReeKGDFIGuP89F+F6aznZhPwgidinZaeODlp/qSCZA3rnQGrU7KqDDSKS37+1ICa7yNULU9nWZUjoHDNhw==", "product_id"=>"62", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 4], ["LIMIT", 1]]
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `where' for #<Cart:0x00007fb403caac88>):
+  
+app/controllers/carts_controller.rb:16:in `product_delete'
+Started PUT "/__web_console/repl_sessions/749ab2a7c7cd2c64084f80a5fa228a03" for 127.0.0.1 at 2018-02-11 13:26:24 -0500
+Started PUT "/__web_console/repl_sessions/749ab2a7c7cd2c64084f80a5fa228a03" for 127.0.0.1 at 2018-02-11 13:26:24 -0500
+Started PUT "/__web_console/repl_sessions/749ab2a7c7cd2c64084f80a5fa228a03" for 127.0.0.1 at 2018-02-11 13:26:35 -0500
+Started DELETE "/carts/4/product_delete?product_id=62" for 127.0.0.1 at 2018-02-11 13:26:56 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"6OK5ReeKGDFIGuP89F+F6aznZhPwgidinZaeODlp/qSCZA3rnQGrU7KqDDSKS37+1ICa7yNULU9nWZUjoHDNhw==", "product_id"=>"62", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (1.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 4], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 62]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 100ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:26:57 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (43.2ms)
+Completed 401 Unauthorized in 119ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `picture' for nil:NilClass):
+    1: <% @carts.each do |cart| %>
+    2: <% product = cart.product %>
+    3: <tr>
+    4:    <td><%if product.picture.present? %>
+    5:     <%= image_tag(product.picture, :style => "height: 50px ;width: 50px") %>
+    6:     <% end %>
+    7:   </td>
+  
+app/views/carts/index.html.erb:4:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205539042500'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205539042500'
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:28:26 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (34.2ms)
+Completed 401 Unauthorized in 101ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `picture' for nil:NilClass):
+    1: <% @carts.each do |cart| %>
+    2: <% product = cart.product %>
+    3: <tr>
+    4:    <td><%if product.picture.present? %>
+    5:     <%= image_tag(product.picture, :style => "height: 50px ;width: 50px") %>
+    6:     <% end %>
+    7:   </td>
+  
+app/views/carts/index.html.erb:4:in `block in _app_views_carts_index_html_erb___1225674612994926610_70205563781940'
+app/views/carts/index.html.erb:1:in `_app_views_carts_index_html_erb___1225674612994926610_70205563781940'
+Started PUT "/__web_console/repl_sessions/7441194a33a24047bdfc44e5b7629316" for 127.0.0.1 at 2018-02-11 13:28:30 -0500
+Started PUT "/__web_console/repl_sessions/7441194a33a24047bdfc44e5b7629316" for 127.0.0.1 at 2018-02-11 13:28:32 -0500
+Started PUT "/__web_console/repl_sessions/7441194a33a24047bdfc44e5b7629316" for 127.0.0.1 at 2018-02-11 13:28:36 -0500
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:28:37 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered carts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 170ms (Views: 165.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:28:40 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 241ms (Views: 162.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/carts?product_id=65" for 127.0.0.1 at 2018-02-11 13:28:42 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKa7aTIui8n/BlNIsHbW7iAi6n1rH3RHP2nee5x63ey0kZ6BhFAg45BHpirDqziMEflBjBTWi9KTu2duGFP0iQ==", "commit"=>"Add to Cart", "product_id"=>"65"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:28:42.780951"], ["updated_at", "2018-02-11 18:28:42.780951"], ["product_id", 65]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 17ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:28:42 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 141ms (Views: 132.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/carts/6/product_delete?product_id=65" for 127.0.0.1 at 2018-02-11 13:28:48 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"4YITEo6ROHkrfJCQYab73y67vkdAQVbhz9M9QWTye/CLBKe89BqLG9HMf1gfsgDIVtxCu5OXXMw1HDZa/etI0w==", "product_id"=>"65", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.9ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."cart_id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["cart_id", "6"], ["product_id", 65], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: carts.cart_id: SELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."cart_id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?):
+  
+app/controllers/carts_controller.rb:17:in `product_delete'
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:28:58 -0500
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."cart_id" = ? AND "carts"."product_id" = ? LIMIT ?[0m  [["user_id", 2], ["cart_id", "6"], ["product_id", 65], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:29:25 -0500
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:29:26 -0500
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:29:26 -0500
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."cart_id" = ? AND "carts"."product_id" = ? LIMIT ?[0m  [["user_id", 2], ["cart_id", "6"], ["product_id", 65], ["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:29:26 -0500
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:29:39 -0500
+Started PUT "/__web_console/repl_sessions/81b6718a9ce1c189229a820c09c6656f" for 127.0.0.1 at 2018-02-11 13:29:40 -0500
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 6], ["product_id", 65], ["LIMIT", 11]]
+Started DELETE "/carts/6/product_delete?product_id=65" for 127.0.0.1 at 2018-02-11 13:29:48 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"4YITEo6ROHkrfJCQYab73y67vkdAQVbhz9M9QWTye/CLBKe89BqLG9HMf1gfsgDIVtxCu5OXXMw1HDZa/etI0w==", "product_id"=>"65", "id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 6], ["product_id", 65], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 85ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:29:48 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered carts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 271ms (Views: 196.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:29:51 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 179ms (Views: 164.6ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/carts?product_id=66" for 127.0.0.1 at 2018-02-11 13:29:53 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OodGTJNC/KRBGmrPbcwxhjMBf/Lg5mlq8KBo119Mdp+GsGOkJTxXji5bn60eEd/kAtrUA58vlv9cctHC22Vf+g==", "commit"=>"Add to Cart", "product_id"=>"66"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:29:53.549576"], ["updated_at", "2018-02-11 18:29:53.549576"], ["product_id", 66]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:29:53 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 146ms (Views: 137.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/carts?product_id=65" for 127.0.0.1 at 2018-02-11 13:29:55 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YOKsQxvSTYE2BohM8fI7tVFuKXr6J3P8ukYWsWWZXEEKZBjtYVn+48y2Z4SP5sCiKQnVhinxedFAiR2q/IBvYg==", "commit"=>"Add to Cart", "product_id"=>"65"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:29:55.697609"], ["updated_at", "2018-02-11 18:29:55.697609"], ["product_id", 65]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 12ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:29:55 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 153ms (Views: 142.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/carts?product_id=63" for 127.0.0.1 at 2018-02-11 13:29:59 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YOKsQxvSTYE2BohM8fI7tVFuKXr6J3P8ukYWsWWZXEEKZBjtYVn+48y2Z4SP5sCiKQnVhinxedFAiR2q/IBvYg==", "commit"=>"Add to Cart", "product_id"=>"63"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:29:59.348593"], ["updated_at", "2018-02-11 18:29:59.348593"], ["product_id", 63]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 12ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:29:59 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 293ms (Views: 281.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:30:08 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 115ms (Views: 110.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:30:12 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 125ms (Views: 119.6ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/carts/7/product_delete?product_id=66" for 127.0.0.1 at 2018-02-11 13:30:16 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"F2eIz9Q7q5wRXZaxlnmLx6JNsIr9hOdy+UnUmldLv0t94TxhrrAY/uvteXnobXDQ2ipMdi5S7V8Dht+BzlKMaA==", "product_id"=>"66", "id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 7], ["product_id", 66], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 7]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 13ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:30:16 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 260ms (Views: 238.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:30:21 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 211ms (Views: 200.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/carts?product_id=63" for 127.0.0.1 at 2018-02-11 13:30:25 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7wXS8y2UyznLyIJJSw4izbc/9dfDtpxn7ZY3d+Ri+dZTMvcbm+pgE6SJdys408yvhuReJrx/Y/JBRI5iYEvQsw==", "commit"=>"Add to Cart", "product_id"=>"63"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:30:25.615035"], ["updated_at", "2018-02-11 18:30:25.615035"], ["product_id", 63]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 11ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:30:25 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 146ms (Views: 135.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/carts/9/product_delete?product_id=63" for 127.0.0.1 at 2018-02-11 13:30:30 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"yQR8Ugmui8z8VaVI7E8Maxondocwpbvgvz0n9YPBkSSjgsj8cyU4rgblSoCSW/d8YkCKe+Nzsc1F8izuGtiiBw==", "product_id"=>"63", "id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 9], ["product_id", 63], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 13ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:30:30 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 241ms (Views: 226.7ms | ActiveRecord: 3.8ms)
+
+
+Started DELETE "/carts/10/product_delete?product_id=63" for 127.0.0.1 at 2018-02-11 13:30:37 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"0+NfQ/0CUlOW6I/RtN6q7pDLh4enqYDwaVMqPWRdPyW5Zevth4nhMWxYYBnKylH56Kx7e3R/it2TnCEm/UQMBg==", "product_id"=>"63", "id"=>"10"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 10], ["product_id", 63], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 10]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 13ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:30:37 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 301ms (Views: 280.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:30:38 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 261ms (Views: 248.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/carts?product_id=63" for 127.0.0.1 at 2018-02-11 13:31:16 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lkNzkCdWr0VdR4RctGCQp8/c+BASsVGtYY4/GU8IBkYqdFZ4kSgEbzIGcT7HvX7F/gdT4W14rjjNXIYMyyEvIw==", "commit"=>"Add to Cart", "product_id"=>"63"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:31:16.442704"], ["updated_at", "2018-02-11 18:31:16.442704"], ["product_id", 63]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 13ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:31:16 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 153ms (Views: 145.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/carts/11/product_delete?product_id=63" for 127.0.0.1 at 2018-02-11 13:31:22 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"GX8OM/HfGnrVhuogLAAWYDICDLyXEyfPTzNwJ6QFjstz+bqdi1SpGC82BehSFO13SmXwQETFLeK1/Hs8PRy96A==", "product_id"=>"63", "id"=>"11"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 11], ["product_id", 63], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 11]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 12ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:31:22 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 167ms (Views: 159.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/carts/8/product_delete?product_id=65" for 127.0.0.1 at 2018-02-11 13:31:25 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"NMQ5AKsI6GO50WvtI/D572pBiZY19K8KiI6BayEGmZ5eQo2u0YNbAUNhhCVd5AL4EiZ1auYipSdyQYpwuB+qvQ==", "product_id"=>"65", "id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 8], ["product_id", 65], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 8]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:31:25 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered carts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 160ms (Views: 154.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 13:31:27 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 223ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:31:44 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 205ms (Views: 200.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/63" for 127.0.0.1 at 2018-02-11 13:32:05 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"63"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 165ms (Views: 154.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 13:32:13 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 346ms (Views: 336.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:32:23 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (75.7ms)
+Completed 200 OK in 336ms (Views: 328.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/carts?product_id=64" for 127.0.0.1 at 2018-02-11 13:32:26 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e2UsrPjIt20fM97qmOVOpgJBD+/BZWA8j4GkrQs/xL7HUglETrYcR3ByK4jrOKDEM5qkHr6sn6kjUx24jxbt2w==", "commit"=>"Add to Cart", "product_id"=>"64"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:32:26.729222"], ["updated_at", "2018-02-11 18:32:26.729222"], ["product_id", 64]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 11ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:32:26 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 135ms (Views: 127.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:32:36 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 224ms (Views: 216.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/carts?product_id=63" for 127.0.0.1 at 2018-02-11 13:32:38 -0500
+Processing by CartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U/hPC7zU6U22b4k6fJWmLGkff3HBx8C88cyqQMou1ufvz2rjCqpCZ9kufFgPSEhOWMTUgL4OPyldHhNVTgf/gg==", "commit"=>"Add to Cart", "product_id"=>"63"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "created_at", "updated_at", "product_id") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["created_at", "2018-02-11 18:32:38.718052"], ["updated_at", "2018-02-11 18:32:38.718052"], ["product_id", 63]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:32:38 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 120ms (Views: 113.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/carts/12/product_delete?product_id=64" for 127.0.0.1 at 2018-02-11 13:32:44 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"LbWo9vokDs+ytfIwZ18E1UJoxQQ9zBu1YaiRwFs6NZBHMxxYgK+9rUgFHfgZS//COg85+O4aEZibZ5rbwiMGsw==", "product_id"=>"64", "id"=>"12"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 12], ["product_id", 64], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.6ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 12]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 28ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:32:44 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendered carts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 176ms (Views: 168.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/carts/13/product_delete?product_id=63" for 127.0.0.1 at 2018-02-11 13:32:47 -0500
+Processing by CartsController#product_delete as HTML
+  Parameters: {"authenticity_token"=>"cw8zrEsgmjJOvfOV1D4Q/gFoMAkw+RYG7VstEQNIGxUZiYcCMaspULQNHF2qKuvpeQ/M9eMvHCsXlCYKmlEoNg==", "product_id"=>"63", "id"=>"13"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = ? AND "carts"."id" = ? AND "carts"."product_id" = ? ORDER BY "carts"."id" ASC LIMIT ?[0m  [["user_id", 2], ["id", 13], ["product_id", 63], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "carts" WHERE "carts"."id" = ?[0m  [["id", 13]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 13ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2018-02-11 13:32:47 -0500
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered carts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 121ms (Views: 114.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 13:32:52 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 155ms (Views: 150.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 13:33:02 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 164ms (Views: 156.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products/63" for 127.0.0.1 at 2018-02-11 13:33:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"63"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 178ms (Views: 170.4ms | ActiveRecord: 0.5ms)
+
+

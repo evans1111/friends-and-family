@@ -1,9 +1,9 @@
 class Cart < ApplicationRecord
-  #has_many :products
+  belongs_to :product
 
-  def initialize(token:)
-    @token = token
-  end
+  # def initialize(token:)
+  #   @token = token
+  # end
 
   def order
     @order ||= Order.find_or_create_by(token: @token) do |order|
