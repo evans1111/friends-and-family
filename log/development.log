@@ -4870,3 +4870,1145 @@ Completed 200 OK in 158ms (Views: 157.4ms | ActiveRecord: 0.0ms)
 
   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2018-02-10 14:50:57 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 241ms (Views: 233.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:03 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 140ms (Views: 95.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:06 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 147ms (Views: 141.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 164ms (Views: 158.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 145ms (Views: 139.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-10 14:51:09 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 157ms (Views: 153.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:11 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 131ms (Views: 126.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:13 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 162ms (Views: 156.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (6.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 122ms (Views: 110.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-10 14:51:16 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 144ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:17 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 148ms (Views: 138.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:22 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 158ms (Views: 145.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 14:51:24 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 126ms (Views: 119.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-10 14:51:25 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 156ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 16:37:29 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 145ms (Views: 130.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:04:09 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 179ms (Views: 175.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:04:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 104ms (Views: 98.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:04:52 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 117ms (Views: 111.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:06:32 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:06:33 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 129ms (Views: 124.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-10 17:11:11 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:11:16 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 165ms (Views: 152.5ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnPictureToProduct (20180210221603)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "products" ADD "picture" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180210221603"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = ?, "picture" = ? WHERE "products"."id" = ?[0m  [["updated_at", "2018-02-10 22:26:03.623332"], ["picture", "watch1.jpg"], ["id", 1]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:26:14 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 61ms (Views: 57.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:26:17 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:26:18 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:27:13 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 340ms (Views: 326.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:27:17 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 83ms (Views: 80.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:28:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:29:41 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.7ms)
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of nil into String):
+    16:     <tbody>
+    17:       <% @products.each do |product| %>
+    18:         <tr>
+    19:           <td><%= image_tag("gallery/" + product.picture) %></td>
+    20:           <td><%= product.name %></td>
+    21:           <td><%= product.description %></td>
+    22:           <td><%= product.price_in_cents %></td>
+  
+app/views/products/index.html.erb:19:in `+'
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb___4131308096260164821_70014896673940'
+app/views/products/index.html.erb:17:in `_app_views_products_index_html_erb___4131308096260164821_70014896673940'
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:31:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  Rendered products/index.html.erb within layouts/application (3.8ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/index.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+=( image_tag("gallery/"product.picture) );@output_buffer.saf
+                              ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+g("gallery/"product.picture) );@output_buffer.safe_append='<
+                              ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/products/index.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/products/index.html.erb:19: syntax error, unexpected ')', expecting keyword_end
+app/views/products/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:31:44 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.1ms)
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "watch1.jpg" is not present in the asset pipeline.):
+    16:     <tbody>
+    17:       <% @products.each do |product| %>
+    18:         <tr>
+    19:           <td><%= image_tag(product.picture) %></td>
+    20:           <td><%= product.name %></td>
+    21:           <td><%= product.description %></td>
+    22:           <td><%= product.price_in_cents %></td>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb___4131308096260164821_70014897268300'
+app/views/products/index.html.erb:17:in `_app_views_products_index_html_erb___4131308096260164821_70014897268300'
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:32:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (111.9ms)
+Completed 401 Unauthorized in 116ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    16:     <tbody>
+    17:       <% @products.each do |product| %>
+    18:         <tr>
+    19:           <td><%= image_tag(product.picture) %></td>
+    20:           <td><%= product.name %></td>
+    21:           <td><%= product.description %></td>
+    22:           <td><%= product.price_in_cents %></td>
+  
+app/views/products/index.html.erb:19:in `block in _app_views_products_index_html_erb___4131308096260164821_70014897374980'
+app/views/products/index.html.erb:17:in `_app_views_products_index_html_erb___4131308096260164821_70014897374980'
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:34:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 147ms (Views: 143.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 17:35:20 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 87ms (Views: 81.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/product" for 127.0.0.1 at 2018-02-10 17:37:35 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/product"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/b7a796555cfdab67b7b3354804732233" for 127.0.0.1 at 2018-02-10 17:39:57 -0500
+Started PUT "/__web_console/repl_sessions/b7a796555cfdab67b7b3354804732233" for 127.0.0.1 at 2018-02-10 17:40:14 -0500
+Started GET "/products/1/edit" for 127.0.0.1 at 2018-02-10 17:41:23 -0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (11.0ms)
+  Rendered products/edit.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 67ms (Views: 61.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/1" for 127.0.0.1 at 2018-02-10 18:15:24 -0500
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xDY9K1rHXT/7sxTlrBSIPMndgUElh2FklC/7+d+3G73pPMK6olWYCPZ7AN4dTv9/UwWih9e+/KZpHIu7jgs43A==", "product"=>{"name"=>"Watch 1", "picture"=>"watch1.jpg", "description"=>"Watch description 1", "price_in_cents"=>"99"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :picture
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (9.1ms)
+  Rendered products/edit.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 146ms (Views: 71.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-10 18:15:34 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 138ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 18:15:38 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 151ms (Views: 145.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 18:23:25 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 164ms (Views: 162.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-10 18:27:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 130ms (Views: 124.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 11:13:14 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 424ms (Views: 413.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 11:13:34 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:13:54 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 153ms (Views: 102.7ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 3]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 6]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 7]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 8]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 9]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 10]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 79], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 79], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (3.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 79], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 79], ["created_at", "2018-02-11 16:22:30.172166"], ["updated_at", "2018-02-11 16:22:30.172166"]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.188888"], ["updated_at", "2018-02-11 16:22:30.188888"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.199429"], ["updated_at", "2018-02-11 16:22:30.199429"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.209717"], ["updated_at", "2018-02-11 16:22:30.209717"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.217750"], ["updated_at", "2018-02-11 16:22:30.217750"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.227555"], ["updated_at", "2018-02-11 16:22:30.227555"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.235651"], ["updated_at", "2018-02-11 16:22:30.235651"]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.245232"], ["updated_at", "2018-02-11 16:22:30.245232"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.253899"], ["updated_at", "2018-02-11 16:22:30.253899"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? LIMIT ?[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:22:30.261901"], ["updated_at", "2018-02-11 16:22:30.261901"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:22:44 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 291ms (Views: 272.5ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 11]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 12]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 13]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 14]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 15]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 16]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 17]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 18]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 19]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 20]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:24:18 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 275ms (Views: 263.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:24:42 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:24:43 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 122ms (Views: 115.9ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 79], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 79], ["created_at", "2018-02-11 16:25:13.657160"], ["updated_at", "2018-02-11 16:25:13.657160"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"]]
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.672407"], ["updated_at", "2018-02-11 16:25:13.672407"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.681831"], ["updated_at", "2018-02-11 16:25:13.681831"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.689348"], ["updated_at", "2018-02-11 16:25:13.689348"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.699090"], ["updated_at", "2018-02-11 16:25:13.699090"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.707680"], ["updated_at", "2018-02-11 16:25:13.707680"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.716587"], ["updated_at", "2018-02-11 16:25:13.716587"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.724956"], ["updated_at", "2018-02-11 16:25:13.724956"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.734096"], ["updated_at", "2018-02-11 16:25:13.734096"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:25:13.741677"], ["updated_at", "2018-02-11 16:25:13.741677"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:25:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 297ms (Views: 284.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:27:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 114ms (Views: 107.9ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 21]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 22]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 23]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 24]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 25]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 26]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 27]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 28]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 29]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 30]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["created_at", "2018-02-11 16:27:49.862622"], ["updated_at", "2018-02-11 16:27:49.862622"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.872052"], ["updated_at", "2018-02-11 16:27:49.872052"], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.880951"], ["updated_at", "2018-02-11 16:27:49.880951"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.891138"], ["updated_at", "2018-02-11 16:27:49.891138"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.902437"], ["updated_at", "2018-02-11 16:27:49.902437"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.911860"], ["updated_at", "2018-02-11 16:27:49.911860"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.921770"], ["updated_at", "2018-02-11 16:27:49.921770"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.930443"], ["updated_at", "2018-02-11 16:27:49.930443"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.940568"], ["updated_at", "2018-02-11 16:27:49.940568"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:27:49.950725"], ["updated_at", "2018-02-11 16:27:49.950725"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:27:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 115ms (Views: 109.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:31:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 31]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 32]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 33]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 34]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 35]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 36]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 37]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 38]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 39]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 40]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["created_at", "2018-02-11 16:31:19.101654"], ["updated_at", "2018-02-11 16:31:19.101654"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.109763"], ["updated_at", "2018-02-11 16:31:19.109763"], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1Xc.5PVXXXXbgaVXXq6xXFXXXC/NO-LOGO-classic-Elite-Watch-Men-Women-Simple-Stable-Pointer-Clock-Fashion-Interview-White-Collar-Wrist.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.117420"], ["updated_at", "2018-02-11 16:31:19.117420"], ["picture", "https://ae01.alicdn.com/kf/HTB1Xc.5PVXXXXbgaVXXq6xXFXXXC/NO-LOGO-classic-Elite-Watch-Men-Women-Simple-Stable-Pointer-Clock-Fashion-Interview-White-Collar-Wrist.jpg_640x640.jpg"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["picture", "http://doomhall.com/media/2016/03/SKU2737452.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.127380"], ["updated_at", "2018-02-11 16:31:19.127380"], ["picture", "http://doomhall.com/media/2016/03/SKU2737452.jpg"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0650/7427/files/fte3002-rose-gold-tan-ladies-minimal-watch.JPG?13036030452529108884"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.134819"], ["updated_at", "2018-02-11 16:31:19.134819"], ["picture", "https://cdn.shopify.com/s/files/1/0650/7427/files/fte3002-rose-gold-tan-ladies-minimal-watch.JPG?13036030452529108884"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.142965"], ["updated_at", "2018-02-11 16:31:19.142965"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.152067"], ["updated_at", "2018-02-11 16:31:19.152067"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.159187"], ["updated_at", "2018-02-11 16:31:19.159187"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.166812"], ["updated_at", "2018-02-11 16:31:19.166812"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" IS NULL LIMIT ?[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:31:19.173933"], ["updated_at", "2018-02-11 16:31:19.173933"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:31:24 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 110ms (Views: 104.3ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 41]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 42]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 43]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 44]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 45]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 46]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 47]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 48]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 49]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 50]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["created_at", "2018-02-11 16:37:00.031858"], ["updated_at", "2018-02-11 16:37:00.031858"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.041134"], ["updated_at", "2018-02-11 16:37:00.041134"], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1Xc.5PVXXXXbgaVXXq6xXFXXXC/NO-LOGO-classic-Elite-Watch-Men-Women-Simple-Stable-Pointer-Clock-Fashion-Interview-White-Collar-Wrist.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.050448"], ["updated_at", "2018-02-11 16:37:00.050448"], ["picture", "https://ae01.alicdn.com/kf/HTB1Xc.5PVXXXXbgaVXXq6xXFXXXC/NO-LOGO-classic-Elite-Watch-Men-Women-Simple-Stable-Pointer-Clock-Fashion-Interview-White-Collar-Wrist.jpg_640x640.jpg"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["picture", "http://doomhall.com/media/2016/03/SKU2737452.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.065580"], ["updated_at", "2018-02-11 16:37:00.065580"], ["picture", "http://doomhall.com/media/2016/03/SKU2737452.jpg"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0650/7427/files/fte3002-rose-gold-tan-ladies-minimal-watch.JPG?13036030452529108884"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.076817"], ["updated_at", "2018-02-11 16:37:00.076817"], ["picture", "https://cdn.shopify.com/s/files/1/0650/7427/files/fte3002-rose-gold-tan-ladies-minimal-watch.JPG?13036030452529108884"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["picture", "https://sc01.alicdn.com/kf/HTB1B6_JaDZRMeJjSsppq6xrEpXaJ/New-arrival-exclusive-men-no-logo-watches.jpg_350x350.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.086502"], ["updated_at", "2018-02-11 16:37:00.086502"], ["picture", "https://sc01.alicdn.com/kf/HTB1B6_JaDZRMeJjSsppq6xrEpXaJ/New-arrival-exclusive-men-no-logo-watches.jpg_350x350.jpg"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/WhiteTanLeather.Front_1024x1024.jpg?v=1510683461"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.097767"], ["updated_at", "2018-02-11 16:37:00.097767"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/WhiteTanLeather.Front_1024x1024.jpg?v=1510683461"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Voyager08.Front_1024x1024.jpg?v=1510685016"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.107206"], ["updated_at", "2018-02-11 16:37:00.107206"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Voyager08.Front_1024x1024.jpg?v=1510685016"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Womens14.Front_1024x.jpg?v=1510688045"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.118018"], ["updated_at", "2018-02-11 16:37:00.118018"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Womens14.Front_1024x.jpg?v=1510688045"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["picture", "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/3888380_fpx.tif?bgc=255,255,255&wid=224&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:37:00.125557"], ["updated_at", "2018-02-11 16:37:00.125557"], ["picture", "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/3888380_fpx.tif?bgc=255,255,255&wid=224&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:37:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 88ms (Views: 83.3ms | ActiveRecord: 1.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 51]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 52]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 53]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 54]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 55]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 56]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 57]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 58]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 59]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 60]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 1"], ["description", "Watch description 1"], ["price_in_cents", 179], ["created_at", "2018-02-11 16:52:59.922903"], ["updated_at", "2018-02-11 16:52:59.922903"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/GunmetalSandstoneLeather.Front.EDIT_1024x.jpg?v=1510684261"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 2"], ["description", "Watch description 2"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.931136"], ["updated_at", "2018-02-11 16:52:59.931136"], ["picture", "https://ae01.alicdn.com/kf/HTB1llr9RXXXXXbxXFXXq6xXFXXXk/No-logo-watches-high-quality-fashion-lovers-watch-customized-women-dress-watch-casual-leather-men-watches.jpg_640x640.jpg"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["picture", "https://ae01.alicdn.com/kf/HTB1Xc.5PVXXXXbgaVXXq6xXFXXXC/NO-LOGO-classic-Elite-Watch-Men-Women-Simple-Stable-Pointer-Clock-Fashion-Interview-White-Collar-Wrist.jpg_640x640.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 3"], ["description", "Watch description 3"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.937755"], ["updated_at", "2018-02-11 16:52:59.937755"], ["picture", "https://ae01.alicdn.com/kf/HTB1Xc.5PVXXXXbgaVXXq6xXFXXXC/NO-LOGO-classic-Elite-Watch-Men-Women-Simple-Stable-Pointer-Clock-Fashion-Interview-White-Collar-Wrist.jpg_640x640.jpg"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["picture", "http://doomhall.com/media/2016/03/SKU2737452.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 4"], ["description", "Watch description 4"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.944515"], ["updated_at", "2018-02-11 16:52:59.944515"], ["picture", "http://doomhall.com/media/2016/03/SKU2737452.jpg"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0650/7427/files/fte3002-rose-gold-tan-ladies-minimal-watch.JPG?13036030452529108884"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 5"], ["description", "Watch description 5"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.954769"], ["updated_at", "2018-02-11 16:52:59.954769"], ["picture", "https://cdn.shopify.com/s/files/1/0650/7427/files/fte3002-rose-gold-tan-ladies-minimal-watch.JPG?13036030452529108884"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["picture", "https://sc01.alicdn.com/kf/HTB1B6_JaDZRMeJjSsppq6xrEpXaJ/New-arrival-exclusive-men-no-logo-watches.jpg_350x350.jpg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 6"], ["description", "Watch description 6"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.963695"], ["updated_at", "2018-02-11 16:52:59.963695"], ["picture", "https://sc01.alicdn.com/kf/HTB1B6_JaDZRMeJjSsppq6xrEpXaJ/New-arrival-exclusive-men-no-logo-watches.jpg_350x350.jpg"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/WhiteTanLeather.Front_1024x1024.jpg?v=1510683461"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 7"], ["description", "Watch description 7"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.971761"], ["updated_at", "2018-02-11 16:52:59.971761"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/WhiteTanLeather.Front_1024x1024.jpg?v=1510683461"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Voyager08.Front_1024x1024.jpg?v=1510685016"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 8"], ["description", "Watch description 8"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.979586"], ["updated_at", "2018-02-11 16:52:59.979586"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Voyager08.Front_1024x1024.jpg?v=1510685016"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Womens14.Front_1024x.jpg?v=1510688045"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 9"], ["description", "Watch description 9"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:52:59.995447"], ["updated_at", "2018-02-11 16:52:59.995447"], ["picture", "https://cdn.shopify.com/s/files/1/0377/2037/products/Womens14.Front_1024x.jpg?v=1510688045"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."name" = ? AND "products"."description" = ? AND "products"."price_in_cents" = ? AND "products"."picture" = ? LIMIT ?[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["picture", "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/3888380_fpx.tif?bgc=255,255,255&wid=224&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price_in_cents", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watch 10"], ["description", "Watch description 10"], ["price_in_cents", 99], ["created_at", "2018-02-11 16:53:00.007028"], ["updated_at", "2018-02-11 16:53:00.007028"], ["picture", "https://slimages.macysassets.com/is/image/MCY/products/0/optimized/3888380_fpx.tif?bgc=255,255,255&wid=224&qlt=90,0&layer=comp&op_sharpen=0&resMode=bicub&op_usm=0.7,1.0,0.5,0&fmt=jpeg"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-02-11 11:54:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 269ms (Views: 260.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:54:16 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 139ms (Views: 118.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 11:54:21 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 149ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 11:54:27 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 160ms (Views: 153.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-11 11:54:41 -0500
+Processing by WelcomesController#home as HTML
+  Rendering welcomes/home.html.erb within layouts/application
+  Rendered welcomes/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 145ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 12:02:04 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 171ms (Views: 166.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/64" for 127.0.0.1 at 2018-02-11 12:03:34 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (4.5ms)
+Completed 401 Unauthorized in 52ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
+e_tag("gallery/watch1.jpg") %=> -->
+                              ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:26: syntax error, unexpected '<'
+<!-- <%= link_to 'Edit', edit_produc
+      ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
+app/views/products/show.html.erb:26: syntax error, unexpected '<'
+app/views/products/show.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/products/show.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/products" for 127.0.0.1 at 2018-02-11 12:03:36 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/61" for 127.0.0.1 at 2018-02-11 12:03:47 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
+e_tag("gallery/watch1.jpg") %=> -->
+                              ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:26: syntax error, unexpected '<'
+<!-- <%= link_to 'Edit', edit_produc
+      ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/lisa/Desktop/wyncode/ff_project/friends-and-family/app/views/products/show.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/products/show.html.erb:24: syntax error, unexpected tOP_ASGN, expecting ')'
+app/views/products/show.html.erb:26: syntax error, unexpected '<'
+app/views/products/show.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/products/show.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/products/61" for 127.0.0.1 at 2018-02-11 12:05:08 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 76ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-02-11 12:08:39 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 135ms (Views: 127.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/61" for 127.0.0.1 at 2018-02-11 12:08:47 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/61" for 127.0.0.1 at 2018-02-11 12:11:52 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/61" for 127.0.0.1 at 2018-02-11 12:22:56 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"61"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 135ms (Views: 127.3ms | ActiveRecord: 0.7ms)
+
+
