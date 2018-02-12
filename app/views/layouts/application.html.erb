@@ -8,6 +8,8 @@
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
   </head>
 
@@ -17,12 +19,18 @@
     <nav>
       <div class="nav-wrapper #ffffff">
         <!-- <a href="#" class="brand-logo center">Our Watch Store</a> -->
-        <li class="brand-logo center"><%= link_to 'Wyncode Watches', root_path %></li>
+      <%= image_tag("wynwatches.png", :border=>0, :class => 'brand-logo center', height: 70) %>
+
+        <!-- <li class="brand-logo center"><%= link_to 'Wyncode Watches', root_path %></li> -->
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><%= link_to 'HOME', root_path %></li>
           <li><%= link_to 'SHOP', products_path %></li>
           <!-- <li><%= link_to 'SIGN IN', products_path %></li> -->
+          <li><%= link_to 'MY CART', carts_path %></li>
           <li><a href="/users/sign_in">SIGN IN</a></li>
+          <li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %></li>
+
+
         </ul>
       </div>
       <!-- <li id="signup"><%= link_to 'New Customer? SIGN UP', products_path %></li> -->
@@ -30,5 +38,9 @@
     </nav>
     <%= yield %>
 
+    
+
   </body>
+
+
 </html>
