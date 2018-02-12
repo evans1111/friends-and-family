@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 gem 'jquery-rails'
 
+gem 'hirb'
+
 gem 'devise', '~> 4.4', '>= 4.4.1'
 
 gem 'stripe'

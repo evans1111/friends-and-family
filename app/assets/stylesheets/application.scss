@@ -1,3 +1,6 @@
+html, body, p, h1, h2, h3 {
+  font-family: 'Open Sans';
+}
 @import "materialize";
 /* --- NAVBAR STYLING --- */
 a {
@@ -135,6 +138,10 @@ nav .brand-logo.center {
   float: right;
 }
 
+/* --- END HOME PAGE SECTION 2 STYLING --- */
+
+
+/* --- HOME PAGE SECTION 3 STYLING --- */
 
 .parallax-container {
   height: 480px;
@@ -144,7 +151,6 @@ nav .brand-logo.center {
   background-color: #000;
   padding: 0;
   color: #fff;
-  // background-position: fixed;
 }
 
 #subscribe {
@@ -164,6 +170,78 @@ nav .brand-logo.center {
   color: #fff;
 }
 
+
 .stripe-button-el span {
   background: red !important;
+}
+/* --- END HOME PAGE SECTION 3 STYLING --- */
+
+
+/* --- PRODUCT PAGE STYLING --- */
+#productdescription {
+  margin-top: 1.6rem;
+}
+
+/* --- END PRODUCT PAGE STYLING --- */
+
+
+/* --- SHOPPING CART PAGE STYLING --- */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #fff;
+}
+
+#checkoutitem {
+  width: 300px;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+#checkout {
+  float: left;
+  margin-top:4rem;
+}
+#buynow {
+  margin-bottom: 1rem;
+}
+.price {
+  font-size: 24px;
+  font-weight: 700;
+}
+#total {
+  width: 100%;
+  float: right;
+  text-align: center;
+  position: absolute;
+}
+
+/* --- END SHOPING CART PAGE STYLING --- */
+
+
+
+/* --- LOG IN PAGE STYLING --- */
+.linebreak {
+  width: 70%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 5rem 1rem 0rem 1rem;
+}
+
+/* --- END LOG IN PAGE STYLING --- */
+
+
+/* -- FOOTER STYLING --- */
+.page-footer {
+  background-color: #212121;
+  color: #ccc!important;
+}
+#footer-left {
+  float: left;
+  display: inline-block;
+  margin-left: 0;
+}
+#footer-center {
+  margin: 0 auto;
+}
+#footer-right {
+  float: right;
 }
