@@ -1,0 +1,47 @@
+<% @carts.each do |cart| %>
+<% product = cart.product %>
+
+<!-- <tr>
+   <td><%if product.picture.present? %>
+    <%= image_tag(product.picture, :style => "height: 50px ;width: 50px") %>
+    <% end %>
+  </td>
+  <td><%= product.name %></td>
+  <td><%= product.description %></td>
+  <td><%= product.price_in_cents %></td>
+  <td class="waves-effect waves-light btn"><%= link_to 'Product Description', product %></td>
+  <td><%= link_to 'Delete', product_delete_cart_path(cart,product_id: product.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn red' %></td>
+</tr> -->
+
+
+<div class="row" id="checkout">
+       <div class="col s12 m7">
+         <div class="card" id="checkoutitem">
+           <div class="card-image">
+             <%= image_tag(product.picture, :style => "height: 200px ;width: 200px") %>
+           </div>
+           <div class="card-content">
+             <span class="card-title"><%= product.name %></span><br>
+             <%= product.description %><br>
+             <span class="price"><td>$<%= product.price_in_cents %></td></span>
+           </div>
+           <div class="card-action">
+             <span id="buynow" class="btn" style="color: #fff;"><%= link_to 'BUY NOW' %></span>
+
+             <span><%= link_to 'Remove', product_delete_cart_path(cart,product_id: product.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn red' %></span>
+           </div>
+         </div>
+       </div>
+     </div>
+<% end %>
+
+<!-- <% @carts.each do |cart| %>
+<%= cart.product.price_in_cents %>
+<%=  %>
+<% end %> -->
+
+<div class="card" id="total">
+<h3>Order Total</h3>
+<h4><%= "$#{@carts.to_a.map{|item| item.product.price_in_cents}.sum}.00" %></h4>
+
+</div>
