@@ -170,10 +170,6 @@ nav .brand-logo.center {
   color: #fff;
 }
 
-
-.stripe-button-el span {
-  background: red !important;
-}
 /* --- END HOME PAGE SECTION 3 STYLING --- */
 
 
@@ -244,4 +240,21 @@ nav .brand-logo.center {
 }
 #footer-right {
   float: right;
+}
+
+// Showpage
+.col.s12.m7 {
+  float: left;
+}
+
+.card {
+      width: 400px;
+}
+
+.card-content {
+  margin-left: 7.5em;
+}
+
+.card-action {
+  text-align: center;
 }

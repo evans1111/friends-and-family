@@ -1,25 +1,73 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag(@product.picture, :style => "height: 400px ;width: 400px") %>
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+
+        <p id="notice"><%= notice %></p>
+
+
+        <h6>
+          <strong>Name:</strong>
+          <%= @product.name %>
+        </h6>
+
+        <h7>
+          <strong>#</strong>
+          <%= @product.description %>
+        </h7>
+        <br>
+
+        <h7>
+          <strong>Price:</strong>
+          <%= @product.price_in_cents %>
+        </h7>
+
+      </div>
+      <div class="card-action">
+        <a href="http://localhost:3000/products" class="btn blue">Back to Items</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <p id="notice"><%= notice %></p>
+
+<div class="item-image">
+
+</div>
+<p>
+<strong>Picture:</strong>
+<%= image_tag(@product.picture, :style => "height: 400px") %>
+</p>
+
+<div class="item-info">
+<p>
+<strong>Name:</strong>
+<%= @product.name %>
+</p>
 
 <p>
-  <strong>Picture:</strong>
-  <%= image_tag(@product.picture, :style => "height: 100px") %>
+<strong>Description:</strong>
+<%= @product.description %>
 </p>
 
 
 <p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
+<<<<<<< HEAD
+<strong>Price in cents:</strong>
+<%= @product.price_in_cents %>
+=======
   <strong>Price: </strong>$
   <%= @product.price_in_cents %>.00
+>>>>>>> master
 </p>
+</div>
 
 
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> -->
