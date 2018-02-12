@@ -34,3 +34,14 @@
        </div>
      </div>
 <% end %>
+
+<!-- <% @carts.each do |cart| %>
+<%= cart.product.price_in_cents %>
+<%=  %>
+<% end %> -->
+
+<div class="card" id="total">
+<h3>Order Total</h3>
+<h4><%= "$#{@carts.to_a.map{|item| item.product.price_in_cents}.sum}.00" %></h4>
+
+</div>
