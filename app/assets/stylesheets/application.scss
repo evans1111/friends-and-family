@@ -212,6 +212,10 @@ nav .brand-logo.center {
   float: right;
   text-align: center;
   position: absolute;
+  line-height: 85%;
+}
+#total h3 {
+  font-size: 1.5rem;
 }
 
 /* --- END SHOPING CART PAGE STYLING --- */
@@ -244,4 +248,15 @@ nav .brand-logo.center {
 }
 #footer-right {
   float: right;
+}
+
+/* --- END FOOTER STYLING --- */
+
+
+/* --- THANK YOU PAGE STYLING --- */
+.thankyou {
+  margin: 0 auto;
+  height: 500px;
+  width: 60%;
+  border: 2px solid #ccc;
 }

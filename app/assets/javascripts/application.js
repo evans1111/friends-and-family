@@ -12,15 +12,10 @@
 //
 //= require materialize-sprockets
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-  $('.parallax').parallax();
-});
+
 
 <script src="https://js.stripe.com/v2/"></script>
 
-<script>
-  Stripe.setPublishableKey(‘pk_test_SAfpkFB2WVKLbQVukGCTVq5Z’);
-</script>
+Stripe.setPublishableKey('pk_test_nuDE3bAhFqEdbqD0AwMetpKN');

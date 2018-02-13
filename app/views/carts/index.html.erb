@@ -26,7 +26,6 @@
              <span class="price"><td>$<%= product.price_in_cents %></td></span>
            </div>
            <div class="card-action">
-             <span id="buynow" class="btn" style="color: #fff;"><%= link_to 'BUY NOW' %></span>
 
   <%= form_tag charges_path do %>
     <article>
@@ -35,21 +34,12 @@
           <p><%= flash[:error] %></p>
         </div>
       <% end %>
-      <label class="amount">
-        <span>Amount: $99.00</span>
-      </label>
     </article>
-
-    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-description="A month's subscription"
-            data-amount="500"
-            data-locale="auto"></script>
   <% end %>
 
 </tr>
 
-             <span><%= link_to 'Remove', product_delete_cart_path(cart,product_id: product.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn red' %></span>
+             <span><%= link_to 'Remove', product_delete_cart_path(cart,product_id: product.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn grey' %></span>
            </div>
          </div>
        </div>
@@ -64,5 +54,24 @@
 <div class="card" id="total">
 <h3>Order Total</h3>
 <h4><%= "$#{@carts.to_a.map{|item| item.product.price_in_cents}.sum}.00" %></h4>
+
+<%= form_tag charges_path do %>
+    <article>
+      <% if flash[:error].present? %>
+        <div id="error_explanation">
+          <p><%= flash[:error] %></p>
+        </div>
+      <% end %>
+    </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+    data-description="Your WynWatch Order"
+    data-amount="<%= (@carts.to_a.map{|item| item.product.price_in_cents}.sum) * 100 %>"
+    data-locale="auto"
+    data-email="<%= current_user.email%>">
+  </script>
+<% end %>
+
 
 </div>
