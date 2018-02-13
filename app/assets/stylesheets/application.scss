@@ -170,10 +170,6 @@ nav .brand-logo.center {
   color: #fff;
 }
 
-
-.stripe-button-el span {
-  background: red !important;
-}
 /* --- END HOME PAGE SECTION 3 STYLING --- */
 
 
@@ -250,6 +246,7 @@ nav .brand-logo.center {
   float: right;
 }
 
+<<<<<<< HEAD
 /* --- END FOOTER STYLING --- */
 
 
@@ -259,4 +256,21 @@ nav .brand-logo.center {
   height: 500px;
   width: 60%;
   border: 2px solid #ccc;
+=======
+// Showpage
+.col.s12.m7 {
+  float: left;
+}
+
+.card {
+      width: 400px;
+}
+
+.card-content {
+  margin-left: 7.5em;
+}
+
+.card-action {
+  text-align: center;
+>>>>>>> 7df3b22f8d439658186d4a2da56b05a3f89eb107
 }
